@@ -1,0 +1,38 @@
+version: 1
+disable_existing_loggers: false
+formatters:
+  default:
+    format: '%(asctime)s %(name)s|%(funcName)s|%(levelname)s|=_=|%(message)s'
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: DEBUG
+    formatter: default
+  info_file_handler:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: INFO
+    formatter: default
+    filename: debug.log
+    when: H
+    interval: 3
+    backupCount: 3
+  error_file_handler:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: ERROR
+    formatter: default
+    filename: error.log
+    when: H
+    interval: 3
+    backupCount: 3
+loggers:
+  default:
+    level: DEBUG
+    handlers: [console]
+    propagate: no
+  brief:
+    level: INFO
+    handlers: [console]
+    propagate: no
+root:
+  level: DEBUG
+  handlers: [console, info_file_handler, error_file_handler]

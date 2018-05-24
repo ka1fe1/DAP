@@ -1,0 +1,5 @@
+.idea
+requirements_dev.txt
+__pycache__/
+env.py
+test.py

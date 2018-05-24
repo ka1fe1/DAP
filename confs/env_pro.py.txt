@@ -1,0 +1,5 @@
+# -*- coding: utf-8 -*-
+
+# 同于标识 pro 环境
+global env
+env = 'pro'

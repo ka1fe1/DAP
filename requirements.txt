@@ -1,0 +1,15 @@
+click==6.7
+Flask==0.12.2
+future==0.16.0
+itsdangerous==0.24
+Jinja2==2.9.6
+MarkupSafe==1.0
+http://cdn.mysql.com/Downloads/Connector-Python/mysql-connector-python-2.0.4.zip#md5=3df394d89300db95163f17c843ef49df
+ply==3.10
+pureyaml==0.1.0
+python-dateutil==2.6.1
+rome==0.0.3
+uWSGI==2.0.15
+ruamel.yaml==0.15.34
+six==1.11.0
+Werkzeug==0.12.2
